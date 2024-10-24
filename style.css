@@ -1,0 +1,230 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  /* background: #7e7676; */
+}
+/* header */
+header {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  height: 84px;
+}
+header .logo {
+  width: 82px;
+  height: auto;
+}
+header nav {
+  margin-left: auto;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+  justify-content: space-between;
+  margin-left: 12px;
+  background: #faf9f9;
+  transition: all 0.3s;
+}
+header nav ul li a:hover {
+  background: #fbf0f0;
+  color: #805050;
+}
+.btn {
+  display: block;
+  padding: 8px;
+  width: 128px;
+  text-align: center;
+}
+/* hero */
+.hero {
+  margin-top: 32px;
+  text-align: center;
+}
+.hero h1 {
+  font-weight: normal;
+  font-size: 62px;
+}
+.hero p {
+  font-size: 18px;
+  margin: 8px 0 48px 0;
+}
+.hero img {
+  width: 240px;
+}
+/* about */
+#about dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #c8c8c8;
+  margin: 20px 0 20px 12px;
+}
+#about dt {
+  width: 15%;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 16px;
+}
+#about dd {
+  width: 85%;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 16px;
+}
+
+/* works */
+#works ul {
+display: flex;
+margin: 24px;
+flex-wrap: wrap;
+justify-content: space-between;
+list-style: none;
+}
+#works ul li {
+  width: calc((100% - 48px) / 3);
+}
+#works ul li img {
+  width: 100%;
+  height: auto;
+  transition: all .3s;
+}
+#works ul li img:hover {
+  transform: scale(1.1, 1.1);
+  opacity: .8;
+}
+/* contact */
+#contact {
+  margin: 20px;
+}
+.center {
+  text-align: center;
+  margin: 20px 0 20px;
+  padding-top: 40px;
+}
+#contact {
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+#contact .message {
+  max-width: 640px;
+  width: 100%;
+  margin: 40px auto;
+}
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+#contact dt {
+  width: 20%;
+  margin-bottom: 12px;
+}
+#contact dd {
+  width: 80%;
+  margin-bottom: 12px;
+}
+#contact dd input,
+#contact dd textarea {
+  width: 100%;
+  border: 1px solid #c8c8c8;
+  padding: 12px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  border: 1px solid #24292e;
+  width: 200px;
+  padding: 15px 0;
+  background: #24292e;
+  color: #fff;
+  transition: all .3s;
+}
+#contact .button input:hover {
+  background: #fff;
+  color: #24292e;
+}
+form {
+  margin: 24px;
+}
+footer {
+  background: #faf9f9;
+  padding: 64px;
+  border-top: 1px solid #35373a;
+  text-align: center;
+}
+
+
+/* sp */
+@media screen and (max-width:600px) {
+/* header */
+header {
+  
+  flex-direction: column;
+  height: auto;
+}
+nav {
+  width: 100%;
+}
+header ul {
+  text-align: center;
+}
+header .btn {
+  width: 100%;
+  margin: 0;
+}
+/* works */
+#works h2 {
+  margin: 32px 0 0;
+  text-align: center;
+}
+#works ul {
+  margin: 0 12px 12px;
+  flex-direction: column;
+}
+#works ul li {
+  width: 80%;
+  margin: 16px auto;
+}
+
+#about dl {
+  margin: 0 12px 12px;
+  flex-direction: column;
+}
+#about dt {
+  width: 100%;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+#about dd {
+  width: 100%;
+}
+#contact dl {
+  flex-direction: column;
+}
+#contact dt {
+  width: 100%;
+  margin-bottom: 8px;
+}
+#contact dd {
+  width: 100%;
+  
+}
+
+}
