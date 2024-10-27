@@ -76,7 +76,7 @@
     </div>
 
     <form action="https://api.staticforms.xyz/submit" method="post" class="message">
-      <input type="hidden" name="accessKey" value="7c96a1c0-7953-44bc-a349-6f6b6eb36eaf"> <!-- required -->
+      <input type="hidden" name="accessKey" value="7c96a1c0-7953-44bc-a349-6f6b6eb36eaf" required>
       <dl>
         <dt><label for="name">お名前</label></dt>
         <dd><input type="text" name="name" id="name" required /></dd>
@@ -85,6 +85,8 @@
         <dt><label for="content">内容</label></dt>
         <dd><textarea name="message" id="content" required /></textarea></dd>
       </dl>
+      <input type="hidden" name="redirectTo" value="https://kusakarico.github.io/beads-club/thanks.html">
+      <input type="hidden" name="subject" value="Test from jsfiddle">
       <div class="button"><input type="submit" value="送信"></div>
     </form>
   </section>

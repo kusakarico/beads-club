@@ -163,6 +163,11 @@ list-style: none;
   color: #24292e;
 }
 
+#thanks {
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
 form {
   margin: 24px;
 }
